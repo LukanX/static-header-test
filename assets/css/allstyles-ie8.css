@@ -2642,7 +2642,7 @@ body.show-offcanvas {
 }
 
 .gift-card {
-  width: 50%;
+  width: 40%;
 }
 
 html,
@@ -2696,7 +2696,7 @@ body {
 }
 
 .site-header .download-app:after {
-  content: "Get App";
+  content: "Get the App";
 }
 
 .site-header .show-tablet {
@@ -2790,6 +2790,10 @@ body {
   text-align: right;
 }
 
+.site-header .site-nav a {
+  padding: .75em 1em;
+}
+
 .site-header .site-nav,
 .site-header .site-sub-nav {
   -webkit-box-flex: 1;
@@ -2806,7 +2810,6 @@ body {
 .site-header .site-nav li,
 .site-header .site-sub-nav li {
   display: inline-block;
-  margin-left: 0.25em;
   position: relative;
 }
 
@@ -2828,6 +2831,16 @@ body {
   background: #4b2354;
 }
 
+.site-header .site-nav .app-download.blue>a,
+.site-header .site-sub-nav .app-download.blue>a {
+  background: #259fc4;
+}
+
+.site-header .site-nav .app-download.blue>a:hover,
+.site-header .site-sub-nav .app-download.blue>a:hover {
+  background: #1d7c99;
+}
+
 .site-header .site-nav .app-download>a,
 .site-header .site-sub-nav .app-download>a {
   background: #784c82;
@@ -2839,8 +2852,30 @@ body {
   background: #4b2354;
 }
 
-.site-header .site-nav .app-download .popup-menu,
-.site-header .site-sub-nav .app-download .popup-menu {
+.site-header .site-nav .app-download .icon,
+.site-header .site-sub-nav .app-download .icon {
+  margin-right: .5em;
+  margin-bottom: -1px;
+  vertical-align: baseline;
+}
+
+.site-header .site-nav .site-nav-account,
+.site-header .site-sub-nav .site-nav-account {
+  margin-left: .5em;
+}
+
+.site-header .site-nav .site-nav-account>a,
+.site-header .site-sub-nav .site-nav-account>a {
+  padding: 1em 2em 1em 1em;
+}
+
+.site-header .site-nav .site-nav-account:hover>a,
+.site-header .site-sub-nav .site-nav-account:hover>a {
+  background: #4b2354;
+}
+
+.site-header .site-nav .site-nav-account .popup-menu,
+.site-header .site-sub-nav .site-nav-account .popup-menu {
   right: 0;
 }
 
@@ -2857,6 +2892,10 @@ body {
 .site-header .site-sub-nav a:hover,
 .site-header .site-sub-nav a:focus {
   background: #784c82;
+}
+
+.site-header .site-sub-nav a {
+  padding: .5em 1em;
 }
 
 .site-header .container--full {
