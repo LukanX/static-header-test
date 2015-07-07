@@ -1,20 +1,16 @@
-<!doctype html>
-<!--[if lt IE 8]><html dir="ltr" lang="en-US" class="lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]> <html dir="ltr" lang="en-US" class="lt-ie10 lt-ie9 ie8"><![endif]-->
-<!--[if IE 9]> <html dir="ltr" lang="en-US" class="lt-ie10 ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html dir="ltr" lang="en-US"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>RetailMeNot - The Best Place to Shop on the Internet</title>
-  <!--[if lt IE 9]><link rel="stylesheet" href="{{ "/assets/css/allstyles-ie8.css" | prepend: site.baseurl }}"><![endif]-->
-  <!--[if gt IE 8]><!--><link rel="stylesheet" href="assets/css/allstyles.css"><!--<![endif]-->
-  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  <link rel="stylesheet" href="assets/css/allstyles.css"><!--<![endif]-->
+  
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
-<body class="page-home">
 
-  <!-- {% include _organisms/site_header.html %} -->
+<body class="page-home">
 
   <nav id="site-nav" class="offcanvas-menu">
     <ul>
@@ -54,17 +50,6 @@
     </a>
     <nav id="site-nav" class="site-nav" role="navigation">
       <ul>
-        <!-- <li class="has-popup-menu"><a href="{{ "/category/" | prepend: site.baseurl }}">Browse by Category</a>
-          <ul class="popup-menu">
-            <li class="popup-menu-item"><a class="popup-menu-link" href="{{ "/" | prepend: site.baseurl }}">Coupon Codes</a></li>
-            <li class="popup-menu-item"><a class="popup-menu-link" href="{{ "/printable" | prepend: site.baseurl }}">Printable Coupons</a></li>
-            <li class="popup-menu-item"><a class="popup-menu-link" href="{{ "/freeshipping" | prepend: site.baseurl }}">Free Shipping</a></li>
-            <li class="popup-menu-item"><a class="popup-menu-link" href="{{ "/ideas/hot-products" | prepend: site.baseurl }}">Product Deals</a></li>
-            <li class="popup-menu-item"><a class="popup-menu-link" href="{{ "/exclusives" | prepend: site.baseurl }}">Only at RetailMeNot</a></li>
-            <li class="popup-menu-item"><a class="popup-menu-link" href="{{ "/categories/" | prepend: site.baseurl }}">Browse by Category</a></li>
-          </ul>
-        </li>
-        <li><a href="{{ "/ideas/" | prepend: site.baseurl }}">President's Day</a></li> -->
         <li class="app-download blue"><a href=""><svg id="icon-phone" class="icon" viewBox="0 0 24 24" fill="currentColor">
             <path d="M16.5,0h-10C5.1,0,4,1.1,4,2.5v19C4,22.9,5.1,24,6.5,24h10c1.4,0,2.5-1.1,2.5-2.5v-19C19,1.1,17.9,0,16.5,0
     z M6,6h11v9H6V6z M6,2.5C6,2.2,6.2,2,6.5,2h10C16.8,2,17,2.2,17,2.5V4H6V2.5z M16.5,22h-10C6.2,22,6,21.8,6,21.5V17h11v4.5
@@ -76,7 +61,6 @@
             <span class="avatar-alert-wrapper is-alerted">
               <img class="avatar avatar--tiny" src="https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg" alt=""/>
             </span>
-            <!-- <span class="avatar-name">{{ site.data.user.firstname }}</span> -->
           </a>
           <ul class="popup-menu">
             <li><a class = "has-alert" href="">Your Stores</a></li>
@@ -93,7 +77,6 @@
       <form class="form-search inline-form-elements" role="search" action="{{ "/search/" | prepend: site.baseurl }}" method="get">
         <input class="query" name="query" type="search" placeholder="Kohls.com, Sephora.com, Bestbuy.com..." aria-label="Search" autocomplete="off" />
         <button type="submit" class="button button--red button--search" data-track-category="Masthead" data-track-action="search">
-          <!-- <svg class="icon"><use xlink:href="{{ "/assets/icons.svg#icon-search" | prepend: site.baseurl }}"></use></svg> -->
           <svg id="icon-search" class="icon" viewBox="-293 385 24 24" fill="currentColor">
             <path d="M-293 393.6c0 4.7 3.8 8.5 8.5 8.5 1.2 0 2.2-.2 3.2-.6l6.6 6.6c.7.6 1.5 1 2.4 1 .9 0 1.8-.4 2.4-1 .6-.7 1-1.5 1-2.4 0-.9-.4-1.8-1-2.4l-6.6-6.6c.4-1 .6-2.1.6-3.2 0-4.7-3.8-8.5-8.5-8.5s-8.6 3.9-8.6 8.6zm13.6 6.8c.7-.6 1.3-1.2 1.9-1.8l6.2 6.2c.3.2.4.5.4.9 0 .3-.1.6-.4.9-.5.5-1.4.5-1.9 0l-6.2-6.2s0-.1 0 0zm-11.5-6.9c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5c0 .9-.2 1.7-.5 2.5l-.2.4c-.2.3-.3.6-.6 1-.4.5-.9 1-1.4 1.4-.3.2-.6.3-.9.5l-.4.2c-.8.3-1.6.5-2.5.5-3.6 0-6.5-2.9-6.5-6.5z"/>
           </svg>
@@ -104,13 +87,9 @@
 
     </div>
 
-    <!-- <a href="#site-nav" class="toggle toggle-menu js-mobile-toggle">
-      <svg class="icon"><use xlink:href="{{ "/assets/icons.svg#icon-menu" | prepend: site.baseurl }}"></use></svg>
-    </a> -->
+
     <div href="" class="toggle-account">
-      <!-- <svg class="icon">
-        <use xlink:href="assets/icons.svg#icon-user"></use>
-      </svg> -->
+
 
       <svg version="1.1" id="icon-user" class="icon" viewBox="0 0 22 24">
         <path d="M16.1 13H16v-1.4c2-1.5 2.9-4.1 2.3-6.5-.5-2.4-2.5-4.4-5-4.9-.4-.2-.8-.2-1.3-.2-3.6 0-6.5 2.9-6.5 6.5 0 2 .9 3.9 2.5 5.1v1.3c-3.9 0-7 3.1-7 7v1.5C1 22.8 2.1 24 3.5 24h17.2c1.3 0 2.3-1.1 2.3-2.4v-1.7c0-3.8-3.1-6.9-6.9-6.9zm4.9 8.6c0 .2-.1.4-.3.4H3.5c-.3 0-.5-.3-.5-.6v-1.5c0-2.8 2.2-5 5.1-5 1.1 0 1.9-.9 1.9-1.9v-1.4c0-.6-.3-1.2-.8-1.5-1.1-.9-1.7-2.2-1.7-3.6C7.5 4 9.5 2 12 2c.3 0 .7 0 1 .1 1.7.4 3.1 1.7 3.4 3.4.4 1.7-.3 3.5-1.6 4.6-.5.3-.8.9-.8 1.5V13c0 1.1.9 1.9 2 1.9 2.8 0 5 2.2 5 5v1.7z"/>
@@ -171,13 +150,11 @@
 
 
   <main role="main" id="site-main">
-    <!-- {{ content }} -->
 
     <!-- BEGIN CAROUSEL -->
     <div class="carousel">
       <div class="carousel-nav">
         <button class="carousel-nav-prev fade" style="display: inline-block;">
-          <!-- <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/icons.svg#icon-arrow-left"></use></svg> -->
           <svg version="1.1" id="icon-arrow-left" class="icon" viewBox="105.8 5.1 420.5 793.1" fill="currentColor">
             <path d="M517.6 742.4c11.5 11.5 11.5 31.7 0 46.1-11.5 14.4-31.7 11.5-43.2 0l-360-365.8c-11.5-11.5-11.5-31.7 0-46.1l360-362.9c11.5-11.5 31.7-11.5 43.2 0 11.5 11.5 11.5 31.7 0 46.1L189.3 399.6l328.3 342.8z"/>
           </svg>
@@ -255,9 +232,7 @@
           <span class="coupon-horizontal-meta-top">
             
             <span class="coupon-horizontal-promoted">
-              <!-- <svg class="icon icon-promoted">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons.svg#icon-promoted"></use>
-              </svg> -->
+
               <svg version="1.1" id="icon-arrow-left" class="icon icon-promoted" viewBox="0 0 16 16" fill="currentColor">
                 <path d="M16 3c0-1.7-1.3-3-3-3H3C1.3 0 0 1.3 0 3v10c0 1.7 1.3 3 3 3h10c1.7 0 3-1.3 3-3V3zm-3 6.5c0 .3-.2.6-.5.6s-.5-.3-.5-.6V4.9l-8.5 8.4c-.2.2-.7.2-.9 0-.2-.2-.2-.6 0-.9L11.1 4H6.5c-.3 0-.6-.2-.6-.5s.3-.5.6-.5h6c.2 0 .3 0 .4.1s.1.2.1.4v6z"/>
               </svg> Promoted
@@ -841,7 +816,6 @@
     </section>
 <!-- END FEATURED STORES -->
   </main>
-  <!-- {% include _organisms/site_footer.html %} -->
   <footer class="site-footer" role="content-info">
   <div class="container">
     <div class="legal">
@@ -883,9 +857,6 @@
   </div>
 </footer>
 
-  <div id="modal" class="modal fade" role="dialog" aria-hidden="true" tabindex="-1"></div>
-
-  <script src="assets/main.js" async></script>
   <script>
     $(document).ready(function(){
       $('.toggle-account').click(function(){
