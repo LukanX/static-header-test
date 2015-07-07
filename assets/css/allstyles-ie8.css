@@ -3253,7 +3253,7 @@ body {
 }
 
 .carousel .carousel-overflow {
-  overflow-x: auto;
+  overflow-x: hidden;
   width: auto;
   white-space: nowrap;
   margin: 0 auto;
